@@ -9,10 +9,7 @@
     /** Module Resolution */
     "moduleResolution": "NodeNext",
     "paths": {
-      "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@styles/*": ["src/styles/*"]
+      "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "types": ["@types/node", "@types/react", "@types/react-dom"],
