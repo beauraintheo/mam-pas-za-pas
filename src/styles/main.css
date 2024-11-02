@@ -6,38 +6,38 @@
 
 @font-face {
   font-family: "Gloria Hallelujah";
-  src: url("@styles/fonts/GloriaHallelujah/GloriaHallelujah-Regular.ttf")
+  src: url("@/styles/fonts/GloriaHallelujah/GloriaHallelujah-Regular.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: "Fredoka";
   font-weight: 700;
-  src: url("@styles/fonts/Fredoka/Fredoka-Bold.ttf") format("truetype");
+  src: url("@/styles/fonts/Fredoka/Fredoka-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fredoka";
   font-weight: 600;
-  src: url("@styles/fonts/Fredoka/Fredoka-SemiBold.ttf") format("truetype");
+  src: url("@/styles/fonts/Fredoka/Fredoka-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fredoka";
   font-weight: 500;
-  src: url("@styles/fonts/Fredoka/Fredoka-Medium.ttf") format("truetype");
+  src: url("@/styles/fonts/Fredoka/Fredoka-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fredoka";
   font-weight: 400;
-  src: url("@styles/fonts/Fredoka/Fredoka-Regular.ttf") format("truetype");
+  src: url("@/styles/fonts/Fredoka/Fredoka-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fredoka";
   font-weight: 300;
-  src: url("@styles/fonts/Fredoka/Fredoka-Light.ttf") format("truetype");
+  src: url("@/styles/fonts/Fredoka/Fredoka-Light.ttf") format("truetype");
 }
 
 /* Base */
@@ -48,10 +48,24 @@
   }
 }
 
+@layer utilities {
+  h1 {
+    @apply font-gloria text-36 md:text-42;
+  }
+
+  .header-button {
+    @apply !font-fredoka !font-medium !bg-light !text-black !normal-case !text-20 !rounded-3xl !px-16 !py-5 !shadow-none; 
+   }
+}
+
 /* Components */
 
 @layer components {
   .header-item {
-    @apply w-fit font-fredoka text-32 font-regular;
+    @apply font-fredoka font-regular text-28 md:text-32 w-full py-2;
+  }
+
+  .header-button {
+    @apply w-full;
   }
 }
