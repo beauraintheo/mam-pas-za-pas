@@ -1,7 +1,7 @@
 import { Header } from "@/components/layouts/Header.tsx";
 
 const Home = () => (
-  <div>
+  <div className="page">
     <Header />
   </div>
 );

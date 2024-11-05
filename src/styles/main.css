@@ -46,26 +46,54 @@
   * {
     @apply box-border;
   }
+
+  body, .root {
+    @apply w-screen h-screen;
+  }
 }
 
 @layer utilities {
+  /** Generic styles **/
+  .page {
+    @apply w-screen h-screen;
+    @apply p-8 lg:p-10;
+  }
+
   h1 {
     @apply font-gloria text-36 md:text-42;
   }
 
-  .header-button {
-    @apply !font-fredoka !font-medium !bg-light !text-black !normal-case !text-20 !rounded-3xl !px-16 !py-5 !shadow-none; 
-   }
+  /** Header styles **/
+  .button-header {
+    @apply !font-fredoka !font-medium;
+    @apply !bg-light !text-black;
+    @apply !rounded-3xl !shadow-none;
+    @apply !normal-case !text-20 md:!text-26 lg:!text-20 xl:!text-26;
+    @apply !px-16 !py-5 w-full md:w-auto;
+  }
 }
 
-/* Components */
-
 @layer components {
-  .header-item {
-    @apply font-fredoka font-regular text-28 md:text-32 w-full py-2;
+  /** Header styles **/
+  .header {
+    @apply flex items-center justify-between;
+    @apply lg:gap-8 2xl:gap-16;
   }
 
-  .header-button {
-    @apply w-full;
+  .header-logo {
+    @apply cursor-pointer;
+    @apply w-1/3 max-w-36 lg:w-32 2xl:w-48 2xl:max-w-full;
+  }
+
+  .header-items {
+    @apply flex flex-col lg:flex-row items-start xl:items-center justify-start xl:justify-center;
+    @apply gap-6 lg:gap-6 xl:gap-14;
+  }
+
+  .header-item {
+    @apply font-fredoka font-regular;
+    @apply cursor-pointer;
+    @apply text-28 md:text-32 lg:text-26 2xl:text-32;
+    @apply py-2 text-center;
   }
 }
