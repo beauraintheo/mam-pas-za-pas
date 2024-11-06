@@ -9,6 +9,7 @@ export default {
         secondary: "#FEA439",
         hightlight: "#FE6788",
         light: "#FEF8EC",
+        lightHover: "#F3E3C4",
       },
       fontFamily: {
         fredoka: [ "Fredoka", "sans-serif" ],

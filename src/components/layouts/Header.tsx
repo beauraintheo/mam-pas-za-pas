@@ -11,11 +11,11 @@ export const Header = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <header className="header">
+    <header className="flex items-center justify-between lg:gap-8 2xl:gap-16">
       <img
         src={LogoPaw}
         alt="logo-mam-pas-za-pas"
-        className="header-logo"
+        className="w-1/3 max-w-36 cursor-pointer lg:w-32 2xl:w-48 2xl:max-w-full"
       />
 
       {
@@ -40,7 +40,7 @@ export const Header = () => {
             onClose={() => setIsOpen(false)}
           >
             <Box
-              className="flex flex-col items-center justify-start p-8 gap-8"
+              className="flex flex-col items-center justify-start gap-8 p-8"
               sx={{ height: 1 }}
             >
               {children}
@@ -48,7 +48,7 @@ export const Header = () => {
           </Drawer>
         )}
       >
-        <ul className="header-items">
+        <ul className="flex flex-col items-start justify-start gap-6 lg:flex-row lg:items-center lg:justify-center lg:gap-6 xl:gap-14">
           <li className="header-item">Accueil</li>
           <li className="header-item">Fonctionnement</li>
           <li className="header-item">Horaires & Tarifs</li>
