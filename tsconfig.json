@@ -20,6 +20,7 @@
     "noUncheckedIndexedAccess": true,
     "noEmit": true,
     "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
     /** Base */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
