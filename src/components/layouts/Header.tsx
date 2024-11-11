@@ -1,8 +1,13 @@
 import { useState } from "react";
-import { Box, Button, Drawer, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  Button,
+  Drawer,
+  useMediaQuery,
+} from "@mui/material";
 
-import BurgerMenu from "@/assets/burger-menu.svg";
-import LogoPaw from "@/assets/logo-paw.svg";
+import BurgerMenu from "@/assets/icons/burger-menu.svg";
+import LogoPaw from "@/assets/icons/logo-paw.svg";
 import { ConditionnalWrapper } from "@/components/utils/ConditionalWrapper.tsx";
 
 export const Header = () => {
@@ -11,7 +16,7 @@ export const Header = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <header className="flex items-center justify-between lg:gap-8 2xl:gap-16">
+    <header className="sticky top-0 flex items-center justify-center bg-white p-8 lg:gap-8 lg:p-10 2xl:gap-16">
       <img
         src={LogoPaw}
         alt="logo-mam-pas-za-pas"
@@ -34,11 +39,7 @@ export const Header = () => {
       <ConditionnalWrapper
         condition={!isDesktop}
         wrapper={children => (
-          <Drawer
-            anchor="right"
-            open={isOpen}
-            onClose={() => setIsOpen(false)}
-          >
+          <Drawer anchor="right" open={isOpen} onClose={() => setIsOpen(false)}>
             <Box
               className="flex flex-col items-center justify-start gap-8 p-8"
               sx={{ height: 1 }}

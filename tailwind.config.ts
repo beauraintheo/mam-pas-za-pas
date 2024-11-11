@@ -4,9 +4,14 @@ export default {
   content: [ "./index.html", "./src/**/*.{js,ts,jsx,tsx}" ],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(135deg, rgba(254,246,236,1) 0%, rgba(237,254,252,1) 100%)",
+      },
       colors: {
         primary: "#19C1B6",
+        primaryHover: "#3AD1C9",
         secondary: "#FEA439",
+        secondaryHover: "#FEBD6A",
         hightlight: "#FE6788",
         light: "#FEF8EC",
         lightHover: "#F3E3C4",
