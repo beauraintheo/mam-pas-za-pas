@@ -16,7 +16,7 @@ export const Header = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <header className="sticky top-0 flex items-center justify-between bg-white p-8 lg:gap-8 lg:p-10 2xl:gap-16">
+    <header className="sticky top-0 flex items-center justify-center bg-white p-8 lg:gap-8 lg:p-10 2xl:gap-16">
       <img
         src={LogoPaw}
         alt="logo-mam-pas-za-pas"

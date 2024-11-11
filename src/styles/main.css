@@ -54,6 +54,10 @@
     @apply w-fit !px-14 !py-7;
   }
 
+  .button-secondary:hover {
+    @apply !bg-secondaryHover;
+  }
+
   .button-header {
     @apply !font-fredoka !font-medium;
     @apply !bg-light !text-black;
