@@ -22,14 +22,38 @@
   /** Generic styles **/
   .page {
     @apply h-screen w-screen;
-    @apply p-8 lg:p-10;
   }
 
+  /** Text styles **/
   h1 {
     @apply font-gloria text-36 md:text-42;
   }
 
-  /** Header styles **/
+  h2 {
+    @apply font-gloria text-32 md:text-36;
+  }
+
+  h3 {
+    @apply font-fredoka text-28 font-semibold md:text-32;
+  }
+
+  h4 {
+    @apply font-fredoka text-28 font-light md:text-32;
+  }
+
+  span {
+    @apply font-fredoka text-16 font-light md:text-18;
+  }
+
+  /** Button styles **/
+  .button-secondary {
+    @apply !font-fredoka !font-medium;
+    @apply !bg-secondary !text-white;
+    @apply !rounded-full !shadow-none;
+    @apply !text-20 !normal-case md:!text-26 lg:!text-20 xl:!text-26;
+    @apply w-fit !px-14 !py-7;
+  }
+
   .button-header {
     @apply !font-fredoka !font-medium;
     @apply !bg-light !text-black;
@@ -47,7 +71,7 @@
   /** Header styles **/
   .header-item {
     @apply relative cursor-pointer py-2 text-center;
-    @apply font-fredoka text-28 font-regular 
+    @apply font-fredoka text-28 font-regular;
   }
 
   .header-item::after {
