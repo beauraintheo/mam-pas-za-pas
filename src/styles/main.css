@@ -86,4 +86,44 @@
     @apply hover:origin-bottom-left hover:scale-x-100;
     @apply md:text-32 lg:text-26 2xl:text-32;
   }
+
+  /** Cards styles **/
+  .card-primary {
+    @apply border-primary;
+  }
+
+  .card-primary strong {
+    @apply text-primary;
+  }
+
+  .card-primary .expand-arrow {
+    @apply bg-primary-200;
+  }
+
+  .card-secondary {
+    @apply border-secondary;
+  }
+
+  .card-secondary strong {
+    @apply text-secondary;
+  }
+
+  .card-secondary .expand-arrow {
+    @apply bg-secondary-200;
+  }
+
+  .card-highlight {
+    @apply border-highlight;
+  }
+
+  .card-highlight strong {
+    @apply text-highlight;
+  }
+
+  .card-highlight .expand-arrow {
+    @apply bg-highlight-200;
+  }
+
+  .aaaaa h2 {
+  }
 }
