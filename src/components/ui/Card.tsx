@@ -24,12 +24,15 @@ export const Card = ({
         : "";
 
   return (
-    <div className={`aaaaa flex w-full max-w-lg flex-col items-center justify-start gap-3 rounded-3xl border border-dashed px-8 py-8 lg:w-1/3 ${cardClass}`}>
+    <div className={`flex w-full max-w-lg flex-col items-center justify-start gap-3 rounded-3xl border border-dashed px-8 py-8 lg:w-1/3 ${cardClass}`}>
       <div className="flex h-48 w-48 items-center justify-center rounded-full bg-lightIcon">
         <img src={icon} alt="Card icon" />
       </div>
 
-      <h2 dangerouslySetInnerHTML={{ __html: title }} />
+      <h2
+        className="min-[1024px]:h-[259.17px] min-[1093px]:h-[215.98px] min-[1280px]:h-[172.78px] min-[1469px]:h-[129.59px]"
+        dangerouslySetInnerHTML={{ __html: title }}
+      />
 
       <div
         className="flex cursor-pointer items-center justify-between gap-3"
