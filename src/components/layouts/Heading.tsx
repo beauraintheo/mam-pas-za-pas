@@ -5,7 +5,7 @@ import Waves from "@/assets/icons/waves.svg";
 import HeadingPicture from "@/assets/images/heading-picture.webp";
 
 export const Heading = () => (
-  <div className="flex flex-col items-center justify-center gap-8 bg-custom-gradient pt-8 lg:pb-12">
+  <div className="flex flex-col items-center justify-center gap-8 bg-custom-gradient py-10 lg:pb-12">
     <div
       className="h-8 w-full bg-auto bg-repeat-x"
       style={{ backgroundImage: `url(${Waves})` }}
