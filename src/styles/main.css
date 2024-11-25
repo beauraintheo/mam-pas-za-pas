@@ -24,8 +24,33 @@
     @apply h-screen w-screen;
   }
 
+  .text-color-primary strong {
+    @apply text-primary;
+  }
+
+  .text-color-secondary strong {
+    @apply text-secondary;
+  }
+
+  .text-color-highlight strong {
+    @apply text-highlight;
+  }
+
+  .border-primary {
+    @apply border-primary;
+  }
+
+  .border-secondary {
+    @apply border-secondary;
+  }
+
+  .border-highlight {
+    @apply border-highlight;
+  }
+
   /** Text styles **/
-  h1 {
+  h1,
+  .color-title {
     @apply font-gloria text-36 md:text-42;
   }
 
@@ -52,6 +77,7 @@
     @apply !rounded-full !shadow-none;
     @apply !text-20 !normal-case md:!text-26 lg:!text-20 xl:!text-26;
     @apply w-fit !px-14 !py-7;
+    @apply duration-200;
   }
 
   .button-secondary:hover {
@@ -88,42 +114,15 @@
   }
 
   /** Cards styles **/
-  .card-primary {
-    @apply border-primary;
-  }
-
-  .card-primary strong {
-    @apply text-primary;
-  }
-
   .card-primary .expand-arrow {
     @apply bg-primary-200;
-  }
-
-  .card-secondary {
-    @apply border-secondary;
-  }
-
-  .card-secondary strong {
-    @apply text-secondary;
   }
 
   .card-secondary .expand-arrow {
     @apply bg-secondary-200;
   }
 
-  .card-highlight {
-    @apply border-highlight;
-  }
-
-  .card-highlight strong {
-    @apply text-highlight;
-  }
-
   .card-highlight .expand-arrow {
     @apply bg-highlight-200;
-  }
-
-  .aaaaa h2 {
   }
 }
