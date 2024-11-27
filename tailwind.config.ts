@@ -19,6 +19,7 @@ export default {
         "light": "#FEF8EC",
         "lightHover": "#F3E3C4",
         "lightIcon": "#FEF8EC",
+        "gray": "#666666",
       },
       fontFamily: {
         fredoka: [ "Fredoka", "sans-serif" ],
@@ -28,6 +29,7 @@ export default {
         16: [ "16px", "1.2" ],
         18: [ "18px", "1.255" ],
         20: [ "20px", "1.2" ],
+        22: [ "22px", "1.75" ],
         26: [ "26px", "1.255" ],
         28: [ "28px", "1.2" ],
         32: [ "32px", "1.255" ],
