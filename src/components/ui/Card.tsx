@@ -17,11 +17,11 @@ export const Card = ({
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   const cardClass = mainColor === "primary"
-    ? "card-primary text-color-primary"
+    ? "border-color-primary card-primary text-color-primary"
     : mainColor === "secondary"
-      ? "card-secondary text-color-secondary"
+      ? "border-color-secondary card-secondary text-color-secondary"
       : mainColor === "highlight"
-        ? "card-highlight text-color-highlight"
+        ? "border-color-highlight card-highlight text-color-highlight"
         : "";
 
   return (
@@ -36,7 +36,7 @@ export const Card = ({
       />
 
       <div
-        className="flex cursor-pointer items-center justify-between gap-3"
+        className="flex cursor-pointer items-center justify-between gap-3 lg:cursor-default"
         onClick={() => !isDesktop && setIsExpanded(!isExpanded)}
       >
         <span className="font-regular">{subtitle}</span>

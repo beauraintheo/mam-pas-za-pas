@@ -14,14 +14,14 @@
 
   body,
   .root {
-    @apply h-screen w-screen;
+    @apply h-full w-screen;
   }
 }
 
 @layer utilities {
   /** Generic styles **/
   .page {
-    @apply h-screen w-screen;
+    @apply h-full w-screen;
   }
 
   .text-color-primary strong {
@@ -36,15 +36,15 @@
     @apply text-highlight;
   }
 
-  .border-primary {
+  .border-color-primary {
     @apply border-primary;
   }
 
-  .border-secondary {
+  .border-color-secondary {
     @apply border-secondary;
   }
 
-  .border-highlight {
+  .border-color-highlight {
     @apply border-highlight;
   }
 
@@ -124,5 +124,38 @@
 
   .card-highlight .expand-arrow {
     @apply bg-highlight-200;
+  }
+
+  /** Footer styles **/
+
+  .footer-infos {
+    @apply flex flex-col gap-8 lg:gap-10;
+  }
+
+  .footer-infos h2 {
+    @apply text-center lg:text-left;
+  }
+
+  .footer-infos ul {
+    @apply flex flex-col gap-4;
+  }
+
+  .footer li,
+  .footer a {
+    @apply font-fredoka text-22 font-light md:text-26;
+    @apply relative;
+    @apply transition-transform duration-500 ease-in-out;
+    @apply font-regular text-gray;
+  }
+
+  .footer-infos a::after {
+    @apply absolute -bottom-1 left-0 h-1 w-full;
+    @apply origin-bottom-right scale-x-0 hover:origin-bottom-left hover:scale-x-100;
+    @apply rounded-2xl bg-primary;
+    @apply mt-2 transition-transform duration-500 content-[''];
+  }
+
+  .footer-infos li {
+    @apply flex gap-4;
   }
 }

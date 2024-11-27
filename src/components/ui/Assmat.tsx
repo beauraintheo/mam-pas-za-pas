@@ -16,7 +16,7 @@ export const Assmat = ({
 
   return (
     <div
-      className={`flex flex-col gap-5 max-w-[600px] items-center justify-start lg:max-w-[415px] ${assmatClass}`}
+      className={`flex max-w-[600px] flex-col items-center justify-start gap-5 lg:max-w-[415px] ${assmatClass}`}
     >
       <img
         src={icon}
