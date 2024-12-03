@@ -20,6 +20,7 @@ export default {
         "lightHover": "#F3E3C4",
         "lightIcon": "#FEF8EC",
         "gray": "#666666",
+        "lightGray": "#DFDFDF",
       },
       fontFamily: {
         fredoka: [ "Fredoka", "sans-serif" ],

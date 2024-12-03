@@ -26,3 +26,8 @@ export interface AssmatProps {
   title: string;
   description: string;
 }
+
+export interface DropdownQuestionProps {
+  title: string;
+  description: string;
+}
