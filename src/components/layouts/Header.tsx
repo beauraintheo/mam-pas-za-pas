@@ -11,7 +11,7 @@ export const Header = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <header className="sticky top-0 z-10 flex items-center justify-between bg-white p-8 lg:justify-center lg:gap-8 lg:p-10 2xl:gap-16">
+    <header className="sticky top-0 z-50 flex items-center justify-between bg-white p-8 lg:justify-center lg:gap-8 lg:p-10 2xl:gap-16">
       <a
         href="/"
         className="w-1/3 max-w-36 cursor-pointer lg:w-32 2xl:w-48 2xl:max-w-full"

@@ -1,4 +1,9 @@
-import type { AssmatProps, CardProps, ColorKeys } from "@/utils/types.ts";
+import type {
+  AssmatProps,
+  CardProps,
+  ColorKeys,
+  QuestionsProps,
+} from "@/utils/types.ts";
 
 import Assmat1 from "@/assets/images/Assmat1.webp";
 import Assmat2 from "@/assets/images/Assmat2.webp";
@@ -72,5 +77,20 @@ export const assmatMapping: AssmatProps[] = [
     <br /><br />
     Mariée et maman de trois filles, <strong>Bruna</strong> (2002), <strong>Eva</strong> (2006) et <strong>Tania</strong> (2010), je m'engage à offrir un cadre bienveillant et stimulant.
     `,
+  },
+];
+
+export const questionsMapping: QuestionsProps[] = [
+  {
+    title: "Qu'est-ce qu'une MAM ?",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies.",
+  },
+  {
+    title: "Question pertinente 1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies.",
+  },
+  {
+    title: "Question pertinente 2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies. Nullam eget nunc nec purus ultricies ultricies.",
   },
 ];

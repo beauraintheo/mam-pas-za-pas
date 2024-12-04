@@ -27,7 +27,12 @@ export interface AssmatProps {
   description: string;
 }
 
-export interface DropdownQuestionProps {
+export interface QuestionsProps {
   title: string;
   description: string;
+}
+
+export interface DropdownQuestionProps extends QuestionsProps {
+  isOpen: boolean;
+  onClick: (isOpen: boolean) => void;
 }
