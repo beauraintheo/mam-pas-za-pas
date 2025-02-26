@@ -2,11 +2,14 @@ import type {
   AssmatProps,
   CardProps,
   ColorKeys,
+  FeedbackProps,
   QuestionsProps,
 } from "@/utils/types.ts";
 
-import Assmat1 from "@/assets/images/Assmat1.webp";
-import Assmat2 from "@/assets/images/Assmat2.webp";
+import Assmat1 from "@/assets/images/assmat1.webp";
+import Assmat2 from "@/assets/images/assmat2.webp";
+import Assmat1Alone from "@/assets/images/assmat1-alone.webp";
+import Assmat2Alone from "@/assets/images/assmat2-alone.webp";
 
 import Card1Icon from "@/assets/icons/card1-icon.svg";
 import Card2Icon from "@/assets/icons/card2-icon.svg";
@@ -77,6 +80,15 @@ export const assmatMapping: AssmatProps[] = [
     <br /><br />
     Mariée et maman de trois filles, <strong>Bruna</strong> (2002), <strong>Eva</strong> (2006) et <strong>Tania</strong> (2010), je m'engage à offrir un cadre bienveillant et stimulant.
     `,
+  },
+];
+
+export const feedbacksMapping: FeedbackProps[] = [
+  {
+    icon: Assmat1Alone,
+    stars: 5,
+    title: "Un accueil chaleureux et professionnel",
+    description: "Nous avons été ravis",
   },
 ];
 

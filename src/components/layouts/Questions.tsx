@@ -45,7 +45,7 @@ export const Questions = () => {
     <div className="m-auto mb-20 mt-20 flex w-full max-w-[1400px] flex-col items-center justify-center gap-10 px-8">
       <h1>
         Des
-        <span className="color-title text-highlight"> questions</span>
+        <span className="color-title text-highlight"> questions </span>
         ?
       </h1>
 
